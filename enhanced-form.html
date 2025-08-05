@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nature Club Registration</title>
+  <meta name="description" content="Join our Nature Club to explore wildlife, attend events, and learn about conservation. Register online using our form.">
+  <meta name="author" content="Your Name">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Nature Explorers Club</h1>
+    <p>Welcome to our official registration page. Join us in promoting awareness and love for nature!</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#registration">Register</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- Activities Section -->
+    <section id="activities">
+      <h2>Club Activities</h2>
+      <p>Our club organizes the following activities:</p>
+      <ul>
+        <li>Nature walks</li>
+        <li>Bird watching</li>
+        <li>Tree planting</li>
+        <li>Conservation campaigns</li>
+      </ul>
+
+      <p>To become a member, you must:</p>
+      <ol>
+        <li>Be at least 16 years old</li>
+        <li>Complete the registration form below</li>
+        <li>Attend the orientation event</li>
+      </ol>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule">
+      <h2>Monthly Schedule</h2>
+      <table border="1" cellpadding="8">
+        <caption>Upcoming Events</caption>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Activity</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>August 10, 2025</td>
+            <td>Wildlife Photography Workshop</td>
+            <td>Yankari Game Reserve</td>
+          </tr>
+          <tr>
+            <td>August 24, 2025</td>
+            <td>Community Tree Planting</td>
+            <td>Zaria Park</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="gallery">
+      <h2>Nature Moments</h2>
+
+      <figure>
+        <img src="https://www.google.com/imgres?q=forest%20elephant&imgurl=https%3A%2F%2Fdinoanimals.com%2Fwp-content%2Fuploads%2F2023%2F01%2FAfrican-forest-elephant-1.jpg&imgrefurl=https%3A%2F%2Fdinoanimals.com%2Fanimals%2Fafrican-forest-elephant%2F&docid=EqD4hRudGG_o1M&tbnid=pLDEs71oXKyAxM&vet=12ahUKEwi--feMt_SOAxVPXEEAHcAgNvoQM3oECCAQAA..i&w=1120&h=700&hcb=2&ved=2ahUKEwi--feMt_SOAxVPXEEAHcAgNvoQM3oECCAQAA" alt="African forest elephant" width="300" />
+        <figcaption>One of our sightings on a recent nature walk.</figcaption>
+      </figure>
+
+      <figure>
+        <video width="320" controls>
+          <source src="https://www.gettyimages.com/detail/video/woman-walking-through-a-forest-in-scandinavia-stock-footage/1419077600" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Short clip from our last forest exploration.</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sound of nature – recorded in one of our trail paths.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration">
+      <h2>Join the Club</h2>
+      <form action="#" method="POST" autocomplete="on">
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3" /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" placeholder="e.g. you@example.com" required /><br /><br />
+
+          <label for="dob">Date of Birth:</label><br />
+          <input type="date" id="dob" name="dob" required /><br /><br />
+
+          <label for="phone">Phone Number:</label><br />
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="08012345678" required /><br /><small>Must be 11 digits</small><br /><br />
+
+          <label for="gender">Gender:</label><br />
+          <select id="gender" name="gender" required>
+            <option value="">-- Select --</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Club Information</legend>
+
+          <label for="interests">Your Interests:</label><br />
+          <input type="checkbox" id="walks" name="interests" value="Nature Walks" /> Nature Walks<br />
+          <input type="checkbox" id="birds" name="interests" value="Bird Watching" /> Bird Watching<br />
+          <input type="checkbox" id="trees" name="interests" value="Tree Planting" /> Tree Planting<br /><br />
+
+          <label for="shirt">T-shirt Size:</label><br />
+          <input type="radio" id="small" name="shirt" value="Small" required /> Small<br />
+          <input type="radio" id="medium" name="shirt" value="Medium" /> Medium<br />
+          <input type="radio" id="large" name="shirt" value="Large" /> Large<br /><br />
+
+          <label for="location">Preferred Event Location:</label><br />
+          <input type="text" id="location" name="location" readonly value="Abuja" /><br /><small>This is auto-selected based on your region</small><br /><br />
+        </fieldset>
+
+        <input type="submit" value="Submit Registration" />
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nature Explorers Club. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
